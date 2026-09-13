@@ -1,0 +1,420 @@
+{
+  "user": {
+    "name": "Daffi Alfian",
+    "email": "daffialfian06@gmail.com",
+    "role": "Client Admin",
+    "avatar": "my-photo.jpeg"
+  },
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "Website Redesign",
+      "description": "Revamping the corporate website for better user engagement and SEO.",
+      "status": "In Progress",
+      "progress": 68,
+      "timeframeText": "Due in 12 days",
+      "statusText": "68% Complete",
+      "category": "Web Design",
+      "phase": "Development Phase",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=80",
+      "deliverables": [
+        {
+          "id": "del-1-1",
+          "title": "Figma High-Fidelity UI Screens (42 artboards)",
+          "type": "figma",
+          "completed": true,
+          "actionLabel": "Preview Figma"
+        },
+        {
+          "id": "del-1-2",
+          "title": "Staging Environment Deployment (v1.4.0)",
+          "type": "deployment",
+          "completed": true,
+          "actionLabel": "Launch Staging"
+        },
+        {
+          "id": "del-1-3",
+          "title": "Final Milestone Client Sign-Off",
+          "type": "signoff",
+          "completed": false,
+          "actionLabel": "Pending Approval"
+        }
+      ]
+    },
+    {
+      "id": "proj-2",
+      "title": "Mobile App Development",
+      "description": "Creating a cross-platform app for enhanced mobile accessibility.",
+      "status": "Pending Approval",
+      "progress": 92,
+      "timeframeText": "Deliverables Ready",
+      "statusText": "Review Pending",
+      "category": "Mobile App",
+      "phase": "Sprint Review 4",
+      "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&auto=format&fit=crop&q=80",
+      "deliverables": [
+        {
+          "id": "del-2-1",
+          "title": "React Native iOS & Android TestFlight Build (v0.9.2)",
+          "type": "deployment",
+          "completed": true,
+          "actionLabel": "TestFlight App"
+        },
+        {
+          "id": "del-2-2",
+          "title": "Push Notification Engine Integration",
+          "type": "code",
+          "completed": true,
+          "actionLabel": "View Specs"
+        },
+        {
+          "id": "del-2-3",
+          "title": "Final Milestone Client Sign-Off & App Store Submission",
+          "type": "signoff",
+          "completed": false,
+          "actionLabel": "Action Required"
+        }
+      ]
+    },
+    {
+      "id": "proj-3",
+      "title": "E-commerce Migration",
+      "description": "Migrating the existing store to a more scalable platform.",
+      "status": "Completed",
+      "progress": 100,
+      "timeframeText": "Closed Dec 20",
+      "statusText": "100% Shipped",
+      "category": "E-Commerce",
+      "phase": "Launch Ready",
+      "image": "https://images.unsplash.com/photo-1556742049-0a67c5574f73?w=600&auto=format&fit=crop&q=80",
+      "deliverables": [
+        {
+          "id": "del-3-1",
+          "title": "Shopify to Headless Next.js Catalog Data Migration",
+          "type": "code",
+          "completed": true,
+          "actionLabel": "Verified"
+        },
+        {
+          "id": "del-3-2",
+          "title": "Stripe Custom Checkout & Webhook Integration",
+          "type": "code",
+          "completed": true,
+          "actionLabel": "Verified"
+        },
+        {
+          "id": "del-3-3",
+          "title": "Final Handover Sign-Off & Production DNS Switch",
+          "type": "signoff",
+          "completed": true,
+          "actionLabel": "Completed"
+        }
+      ]
+    },
+    {
+      "id": "proj-4",
+      "title": "Brand Identity Overhaul",
+      "description": "Complete typography, color system guidelines, and marketing collateral templates.",
+      "status": "In Progress",
+      "progress": 45,
+      "timeframeText": "Due in 24 days",
+      "statusText": "45% Complete",
+      "category": "Branding",
+      "phase": "Design Guidelines",
+      "image": "https://images.unsplash.com/photo-1542744094-3a31f272c490?w=600&auto=format&fit=crop&q=80",
+      "deliverables": [
+        {
+          "id": "del-4-1",
+          "title": "Vector Logo Kit & SVG Assets",
+          "type": "figma",
+          "completed": true,
+          "actionLabel": "Preview"
+        },
+        {
+          "id": "del-4-2",
+          "title": "Corporate Brand Book PDF (60 pages)",
+          "type": "doc",
+          "completed": false,
+          "actionLabel": "In Review"
+        }
+      ]
+    },
+    {
+      "id": "proj-5",
+      "title": "AWS Cloud Architecture",
+      "description": "Kubernetes cluster deployment, auto-scaling policy, and multi-region database setup.",
+      "status": "Pending Approval",
+      "progress": 85,
+      "timeframeText": "Deliverables Ready",
+      "statusText": "Review Pending",
+      "category": "Cloud DevOps",
+      "phase": "Deployment Verification",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop&q=80",
+      "deliverables": [
+        {
+          "id": "del-5-1",
+          "title": "Terraform Infrastructure as Code scripts",
+          "type": "code",
+          "completed": true,
+          "actionLabel": "GitHub PR"
+        },
+        {
+          "id": "del-5-2",
+          "title": "Multi-region PostgreSQL Failover Verification",
+          "type": "deployment",
+          "completed": true,
+          "actionLabel": "Audit Report"
+        },
+        {
+          "id": "del-5-3",
+          "title": "Final Production Sign-Off",
+          "type": "signoff",
+          "completed": false,
+          "actionLabel": "Action Needed"
+        }
+      ]
+    },
+    {
+      "id": "proj-6",
+      "title": "Q3 Technical SEO Audit",
+      "description": "Core web vitals optimization, structured data schema fix, and backlink audit report.",
+      "status": "Completed",
+      "progress": 100,
+      "timeframeText": "Closed Nov 15",
+      "statusText": "100% Shipped",
+      "category": "SEO / Growth",
+      "phase": "Final Report",
+      "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&auto=format&fit=crop&q=80",
+      "deliverables": [
+        {
+          "id": "del-6-1",
+          "title": "Technical SEO Health Benchmark Report",
+          "type": "doc",
+          "completed": true,
+          "actionLabel": "View PDF"
+        },
+        {
+          "id": "del-6-2",
+          "title": "Schema.org Rich Snippet Fix Validation",
+          "type": "code",
+          "completed": true,
+          "actionLabel": "Completed"
+        }
+      ]
+    }
+  ],
+  "invoices": [
+    {
+      "id": "INV-00123",
+      "project": "Website Redesign",
+      "amount": "$1,200.00",
+      "amountNumber": 1200,
+      "issueDate": "Dec 20, 2024",
+      "dueDate": "Jan 5, 2025",
+      "status": "Paid"
+    },
+    {
+      "id": "INV-00125",
+      "project": "Brand Identity Overhaul",
+      "amount": "$2,000.00",
+      "amountNumber": 200,
+      "issueDate": "Feb 10, 2025",
+      "dueDate": "Feb 25, 2025",
+      "status": "Pending"
+    },
+    {
+      "id": "INV-00126",
+      "project": "E-commerce Migration",
+      "amount": "$1,800.00",
+      "amountNumber": 1800,
+      "issueDate": "Dec 01, 2024",
+      "dueDate": "Dec 20, 2024",
+      "status": "Paid"
+    },
+    {
+      "id": "INV-00127",
+      "project": "AWS Cloud Architecture",
+      "amount": "$3,450.00",
+      "amountNumber": 3450,
+      "issueDate": "Mar 10, 2025",
+      "dueDate": "Mar 24, 2025",
+      "status": "Overdue"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "title": "Prepare Figma high-fi mockups for Checkout v2",
+      "tag": "UI Design",
+      "tagColor": "bg-blue-50 text-blue-700 border-blue-200",
+      "status": "todo",
+      "dueText": "Oct 18",
+      "project": "Website Redesign",
+      "assignee": {
+        "name": "Sarah Jenkins",
+        "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80"
+      }
+    },
+    {
+      "id": "task-2",
+      "title": "Gather legal team privacy policy disclaimers",
+      "tag": "Content",
+      "tagColor": "bg-purple-50 text-purple-700 border-purple-200",
+      "status": "todo",
+      "dueText": "Oct 22",
+      "project": "E-commerce Migration",
+      "assignee": {
+        "name": "David Miller",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80"
+      }
+    },
+    {
+      "id": "task-3",
+      "title": "Tailwind component library integration & dark mode tokens",
+      "tag": "Engineering",
+      "tagColor": "bg-emerald-50 text-emerald-700 border-emerald-200",
+      "status": "in-progress",
+      "dueText": "2 days left",
+      "project": "Website Redesign",
+      "assignee": {
+        "name": "Alex Chen",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80"
+      }
+    },
+    {
+      "id": "task-4",
+      "title": "Stripe Customer Portal webhook listeners",
+      "tag": "API",
+      "tagColor": "bg-amber-50 text-amber-700 border-amber-200",
+      "status": "in-progress",
+      "dueText": "Oct 16",
+      "project": "E-commerce Migration",
+      "assignee": {
+        "name": "Mike Zhao",
+        "avatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=100&auto=format&fit=crop&q=80"
+      }
+    },
+    {
+      "id": "task-5",
+      "title": "Interactive Prototype: Client Portal Dashboard",
+      "tag": "Deliverable",
+      "tagColor": "bg-amber-50 text-amber-700 border-amber-200",
+      "status": "review",
+      "dueText": "Action Needed",
+      "project": "Website Redesign",
+      "assignee": {
+        "name": "Joel Hannibal",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+      }
+    },
+    {
+      "id": "task-6",
+      "title": "Brand Asset S3 bucket migration",
+      "tag": "Milestone",
+      "tagColor": "bg-emerald-50 text-emerald-700 border-emerald-200",
+      "status": "done",
+      "dueText": "Completed Oct 4",
+      "project": "Brand Identity Overhaul",
+      "assignee": {
+        "name": "Elena Torres",
+        "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80"
+      }
+    },
+    {
+      "id": "task-7",
+      "title": "Signed Master Service Agreement 2025",
+      "tag": "Contract",
+      "tagColor": "bg-emerald-50 text-emerald-700 border-emerald-200",
+      "status": "done",
+      "dueText": "Completed Sep 28",
+      "project": "General",
+      "assignee": {
+        "name": "Joel Hannibal",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+      }
+    }
+  ],
+  "contracts": [
+    {
+      "id": "ctr-1",
+      "title": "Wonderinc Master Services Agreement (MSA) 2025",
+      "type": "MSA",
+      "status": "active",
+      "validText": "Signed via DocuSign • Valid until Dec 31, 2025 • Governs all umbrella statement of works.",
+      "description": "Comprehensive corporate service level agreement and terms of engagement.",
+      "pdfName": "Wonderinc_MSA_2025.pdf"
+    },
+    {
+      "id": "ctr-2",
+      "title": "Statement of Work (SOW) #4: Mobile App Phase 2",
+      "type": "SOW",
+      "status": "pending",
+      "validText": "Needs Joel Hannibal's electronic signature to initiate Android push-notification sprint.",
+      "description": "Scope, milestone milestones, deliverables, and payment schedule for Phase 2 mobile sprints.",
+      "pdfName": "SOW_Mobile_App_Phase2.pdf"
+    },
+    {
+      "id": "ctr-3",
+      "title": "Mutual Non-Disclosure Agreement (NDA)",
+      "type": "NDA",
+      "status": "active",
+      "validText": "Proprietary code protection, enterprise grade IP confidentiality agreement.",
+      "description": "Standard bilateral mutual confidentiality protecting technical IP, databases, and trade secrets.",
+      "pdfName": "Mutual_NDA_Wonderinc.pdf"
+    },
+    {
+      "id": "ctr-4",
+      "title": "SOW #2: Initial Discovery & Architecture Audit",
+      "type": "SOW",
+      "status": "completed",
+      "validText": "Fulfilled on Dec 15, 2024 • Closed and certified by Wonderinc Legal.",
+      "description": "Discovery analysis phase completed and signed off with final architecture blueprint delivery.",
+      "pdfName": "SOW_Discovery_Audit_Signed.pdf"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "TICK-8841",
+      "subject": "Figma link permissions for QA team",
+      "project": "Website Redesign",
+      "priority": "Normal",
+      "status": "Investigating",
+      "timeAgo": "Updated 22m ago",
+      "assignedTo": "Elena Torres (Lead PM)",
+      "description": "Requested view and comment access for external security testers on Website Redesign workspace."
+    },
+    {
+      "id": "TICK-8820",
+      "subject": "Clarification on Invoice INV-00123 tax rate",
+      "project": "Website Redesign",
+      "priority": "Normal",
+      "status": "Resolved",
+      "timeAgo": "Closed Jan 6, 2025",
+      "assignedTo": "Billing Support",
+      "description": "Wonderinc Finance updated VAT credit notes and reissued receipt PDF."
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "title": "Deliverable Ready for Review",
+      "description": "Mobile App Development sprint 4 artifacts submitted for your sign-off.",
+      "time": "10m ago",
+      "read": false
+    },
+    {
+      "id": "notif-2",
+      "title": "Invoice INV-00125 Issued",
+      "description": "Brand Identity Overhaul invoice is due Feb 25, 2025.",
+      "time": "2h ago",
+      "read": false
+    },
+    {
+      "id": "notif-3",
+      "title": "Contract Pending Signature",
+      "description": "SOW #4: Mobile App Phase 2 awaits Joel Hannibal's electronic signature.",
+      "time": "1d ago",
+      "read": true
+    }
+  ]
+}

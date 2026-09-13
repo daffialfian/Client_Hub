@@ -1,0 +1,6 @@
+{
+  "name": "Wonderinc Client Portal",
+  "description": "Responsive client portal with dashboard, projects gallery, deliverable approvals, tasks board, invoices, contracts, and support desk.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
