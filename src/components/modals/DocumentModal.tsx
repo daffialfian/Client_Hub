@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Download, FileText, CheckCircle2 } from 'lucide-react';
+import { X, Download, CheckCircle2 } from 'lucide-react';
 import { ContractItem } from '../../types';
 
 interface DocumentModalProps {
@@ -28,14 +28,9 @@ export const DocumentModal: React.FC<DocumentModalProps> = ({
       >
         {/* Header */}
         <div className="flex items-start justify-between border-b border-slate-100 pb-4">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
-              <FileText className="w-5 h-5" />
-            </div>
-            <div>
-              <h3 className="text-lg font-bold text-slate-900 leading-tight">{contract.title}</h3>
-              <p className="text-xs text-slate-500 mt-0.5">{contract.pdfName}</p>
-            </div>
+          <div>
+            <h3 className="text-lg font-bold text-slate-900 leading-tight">{contract.title}</h3>
+            <p className="text-xs text-slate-500 mt-0.5">{contract.pdfName}</p>
           </div>
           <button
             onClick={onClose}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Sparkles } from 'lucide-react';
+import { X } from 'lucide-react';
 import { Project } from '../../types';
 
 interface NewProjectModalProps {
@@ -52,12 +52,7 @@ export const NewProjectModal: React.FC<NewProjectModalProps> = ({
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center">
-              <Sparkles className="w-4 h-4" />
-            </div>
-            <h3 className="text-lg font-bold text-slate-900">Request New Client Project</h3>
-          </div>
+          <h3 className="text-lg font-bold text-slate-900">Request New Client Project</h3>
           <button
             onClick={onClose}
             className="text-slate-400 hover:text-slate-600 p-1.5 rounded-lg hover:bg-slate-100 transition"

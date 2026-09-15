@@ -4,11 +4,6 @@ import {
   AlertCircle,
   CheckCircle2,
   ArrowRight,
-  Hash,
-  Star,
-  DollarSign,
-  Calendar,
-  Tag,
   MoreHorizontal,
   Image as ImageIcon
 } from 'lucide-react';
@@ -200,31 +195,11 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
             <table className="w-full text-left text-sm">
               <thead>
                 <tr className="text-xs uppercase font-semibold text-slate-400 bg-slate-50/70 border-b border-slate-100">
-                  <th className="py-3 px-6 whitespace-nowrap">
-                    <span className="flex items-center gap-1.5">
-                      <Hash className="w-3.5 h-3.5" /> Invoice ID
-                    </span>
-                  </th>
-                  <th className="py-3 px-6 whitespace-nowrap">
-                    <span className="flex items-center gap-1.5">
-                      <Star className="w-3.5 h-3.5" /> Project
-                    </span>
-                  </th>
-                  <th className="py-3 px-6 whitespace-nowrap">
-                    <span className="flex items-center gap-1.5">
-                      <DollarSign className="w-3.5 h-3.5" /> Amount
-                    </span>
-                  </th>
-                  <th className="py-3 px-6 whitespace-nowrap">
-                    <span className="flex items-center gap-1.5">
-                      <Calendar className="w-3.5 h-3.5" /> Due Date
-                    </span>
-                  </th>
-                  <th className="py-3 px-6 whitespace-nowrap">
-                    <span className="flex items-center gap-1.5">
-                      <Tag className="w-3.5 h-3.5" /> Status
-                    </span>
-                  </th>
+                  <th className="py-3 px-6 whitespace-nowrap">Invoice ID</th>
+                  <th className="py-3 px-6 whitespace-nowrap">Project</th>
+                  <th className="py-3 px-6 whitespace-nowrap">Amount</th>
+                  <th className="py-3 px-6 whitespace-nowrap">Due Date</th>
+                  <th className="py-3 px-6 whitespace-nowrap">Status</th>
                   <th className="py-3 px-6 text-right whitespace-nowrap">Action</th>
                 </tr>
               </thead>

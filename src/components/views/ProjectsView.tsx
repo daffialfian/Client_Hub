@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, CheckCircle2, AlertCircle, Clock, Sparkles } from 'lucide-react';
+import { Plus, CheckCircle2, AlertCircle, Clock } from 'lucide-react';
 import { Project } from '../../types';
 
 interface ProjectsViewProps {
@@ -188,7 +188,6 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({
                     onClick={() => onSelectProject(project)}
                     className="w-full py-2.5 bg-amber-50 hover:bg-amber-100 text-amber-800 text-xs font-semibold rounded-xl border border-amber-200 transition flex items-center justify-center gap-1.5 cursor-pointer"
                   >
-                    <Sparkles className="w-3.5 h-3.5 text-amber-600" />
                     <span>⚡ Action Needed: Sign Off</span>
                   </button>
                 ) : project.status === 'Completed' ? (
