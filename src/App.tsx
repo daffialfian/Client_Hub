@@ -177,7 +177,7 @@ export default function App() {
         return {
           ...c,
           status: 'active',
-          validText: 'Electronically signed by Joel Hannibal via DocuSign • Valid until Dec 31, 2025',
+          validText: `Electronically signed by ${user.name} via DocuSign • Valid until Dec 31, 2026`,
         };
       })
     );
@@ -237,7 +237,7 @@ export default function App() {
     addToast(
       'success',
       'Payment Processed Successfully',
-      'All outstanding invoices have been settled. Formal payment confirmation sent to joel@email.com.'
+      `All outstanding invoices have been settled. Formal payment confirmation sent to ${user.email}.`
     );
   };
 
@@ -268,7 +268,7 @@ export default function App() {
       id: newId,
       timeAgo: 'Just now',
       status: 'Open',
-      assignedTo: 'Tier 1 Support (Elena Torres)',
+      assignedTo: `${user.name} (Technical Support)`,
     };
 
     setTickets((prev) => [newTicket, ...prev]);
@@ -329,6 +329,7 @@ export default function App() {
         onViewContract={handleViewContract}
         onUploadContract={handleUploadContract}
         onSubmitTicket={handleSubmitTicket}
+        user={user}
       />
 
       {/* 3. Deliverable & Approval Modal */}

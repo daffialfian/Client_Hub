@@ -278,6 +278,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
               <div className="px-3 py-2 border-b border-slate-100">
                 <p className="text-xs font-semibold text-slate-900">{user.name}</p>
                 <p className="text-[11px] text-slate-500">{user.role}</p>
+                {user.school && (
+                  <p className="text-[10px] text-blue-600 font-medium mt-0.5">{user.school}</p>
+                )}
+                {user.location && (
+                  <p className="text-[10px] text-slate-400">{user.location}</p>
+                )}
               </div>
               <button
                 onClick={() => {

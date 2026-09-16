@@ -48,7 +48,7 @@ export const DocumentModal: React.FC<DocumentModalProps> = ({
           </div>
 
           <p>
-            <strong>1. PARTIES & SCOPE:</strong> This Agreement is executed by and between Wonderinc Digital Inc. ("Provider") and Joel Hannibal ("Client"). The terms defined herein govern all deliverable submissions, intellectual property transfers, and service milestones.
+            <strong>1. PARTIES & SCOPE:</strong> This Agreement is executed by and between Client Hub Platform ("Provider") and Daffi Alfian Hadi ("Lead Developer / Client"). The terms defined herein govern all deliverable submissions, intellectual property transfers, and service milestones.
           </p>
 
           <p>

@@ -13,7 +13,8 @@ import {
   Invoice,
   TaskItem,
   ContractItem,
-  SupportTicket
+  SupportTicket,
+  UserProfile
 } from '../types';
 
 interface MainContentProps {
@@ -48,6 +49,7 @@ interface MainContentProps {
   onViewContract: (contract: ContractItem) => void;
   onUploadContract: () => void;
   onSubmitTicket: (ticket: Omit<SupportTicket, 'id' | 'timeAgo' | 'status' | 'assignedTo'>) => void;
+  user?: UserProfile;
 }
 
 export const MainContent: React.FC<MainContentProps> = ({
@@ -75,7 +77,8 @@ export const MainContent: React.FC<MainContentProps> = ({
   onDownloadContract,
   onViewContract,
   onUploadContract,
-  onSubmitTicket
+  onSubmitTicket,
+  user
 }) => {
   const handleOpenDeliverableByTitle = (title: string) => {
     // Try to match with an existing project
@@ -112,6 +115,7 @@ export const MainContent: React.FC<MainContentProps> = ({
             onNavigate={(v) => setActiveView(v)}
             onDownloadInvoice={onDownloadInvoice}
             searchQuery={searchQuery}
+            user={user}
           />
         )}
 
@@ -127,6 +131,7 @@ export const MainContent: React.FC<MainContentProps> = ({
         {activeView === 'tasks' && (
           <TasksView
             tasks={tasks}
+            projects={projects}
             onAddTask={onAddTask}
             onUpdateTaskStatus={onUpdateTaskStatus}
             searchQuery={searchQuery}
@@ -159,6 +164,7 @@ export const MainContent: React.FC<MainContentProps> = ({
         {activeView === 'support' && (
           <SupportView
             tickets={tickets}
+            projects={projects}
             onSubmitTicket={onSubmitTicket}
             searchQuery={searchQuery}
           />

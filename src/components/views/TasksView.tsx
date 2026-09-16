@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Plus, Calendar, Clock, CheckCircle2, ChevronRight } from 'lucide-react';
-import { TaskItem } from '../../types';
+import { TaskItem, Project } from '../../types';
 
 interface TasksViewProps {
   tasks: TaskItem[];
+  projects?: Project[];
   onAddTask: (task: Omit<TaskItem, 'id'>) => void;
   onUpdateTaskStatus: (taskId: string, nextStatus: TaskItem['status']) => void;
   searchQuery?: string;
@@ -12,6 +13,7 @@ interface TasksViewProps {
 
 export const TasksView: React.FC<TasksViewProps> = ({
   tasks,
+  projects = [],
   onAddTask,
   onUpdateTaskStatus,
   searchQuery = '',
@@ -20,8 +22,19 @@ export const TasksView: React.FC<TasksViewProps> = ({
   const [selectedProjectFilter, setSelectedProjectFilter] = useState<string>('All');
   const [showAddTaskModal, setShowAddTaskModal] = useState(false);
   const [newTaskTitle, setNewTaskTitle] = useState('');
-  const [newTaskTag, setNewTaskTag] = useState('Engineering');
-  const [newTaskProject, setNewTaskProject] = useState('Website Redesign');
+  const [newTaskTag, setNewTaskTag] = useState('Front-End');
+
+  // Available project names derived from projects prop or tasks
+  const projectOptions = Array.from(
+    new Set([
+      ...projects.map((p) => p.title),
+      ...tasks.map((t) => t.project)
+    ])
+  );
+
+  const [newTaskProject, setNewTaskProject] = useState(
+    projectOptions[0] || 'Client-Hub - Client Portal Interaktif'
+  );
 
   const filteredTasks = tasks.filter((t) => {
     const matchesSearch =
@@ -59,8 +72,8 @@ export const TasksView: React.FC<TasksViewProps> = ({
       dueText: '3 days left',
       project: newTaskProject,
       assignee: {
-        name: 'Joel Hannibal',
-        avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80'
+        name: 'Daffi Alfian Hadi',
+        avatar: 'my-photo.jpeg'
       }
     });
 
@@ -100,13 +113,14 @@ export const TasksView: React.FC<TasksViewProps> = ({
             <select
               value={selectedProjectFilter}
               onChange={(e) => setSelectedProjectFilter(e.target.value)}
-              className="bg-transparent font-semibold text-slate-800 focus:outline-none cursor-pointer"
+              className="bg-transparent font-semibold text-slate-800 focus:outline-none cursor-pointer max-w-[200px] truncate"
             >
               <option value="All">All Projects</option>
-              <option value="Website Redesign">Website Redesign</option>
-              <option value="Mobile App Development">Mobile App Development</option>
-              <option value="E-commerce Migration">E-commerce Migration</option>
-              <option value="Brand Identity Overhaul">Brand Identity Overhaul</option>
+              {projectOptions.map((projTitle) => (
+                <option key={projTitle} value={projTitle}>
+                  {projTitle}
+                </option>
+              ))}
             </select>
           </div>
 
@@ -267,11 +281,11 @@ export const TasksView: React.FC<TasksViewProps> = ({
                   onChange={(e) => setNewTaskProject(e.target.value)}
                   className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-sm text-slate-800"
                 >
-                  <option>Website Redesign</option>
-                  <option>Mobile App Development</option>
-                  <option>E-commerce Migration</option>
-                  <option>Brand Identity Overhaul</option>
-                  <option>AWS Cloud Architecture</option>
+                  {projectOptions.map((projTitle) => (
+                    <option key={projTitle} value={projTitle}>
+                      {projTitle}
+                    </option>
+                  ))}
                 </select>
               </div>
               <div>
@@ -283,10 +297,13 @@ export const TasksView: React.FC<TasksViewProps> = ({
                   onChange={(e) => setNewTaskTag(e.target.value)}
                   className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-sm text-slate-800"
                 >
-                  <option>UI Design</option>
-                  <option>Engineering</option>
-                  <option>Content</option>
-                  <option>API</option>
+                  <option>Front-End</option>
+                  <option>UI/UX</option>
+                  <option>Database</option>
+                  <option>Backend</option>
+                  <option>Desktop</option>
+                  <option>Game Dev</option>
+                  <option>AI / Tools</option>
                   <option>Deliverable</option>
                 </select>
               </div>

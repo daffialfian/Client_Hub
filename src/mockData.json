@@ -1,40 +1,58 @@
 {
   "user": {
-    "name": "Daffi Alfian",
+    "name": "Daffi Alfian Hadi",
     "email": "daffialfian06@gmail.com",
-    "role": "Client Admin",
-    "avatar": "my-photo.jpeg"
+    "role": "Front-End Web Developer & Siswa RPL",
+    "avatar": "my-photo.jpeg",
+    "phone": "+62 838-9573-9116",
+    "location": "Jakarta Selatan",
+    "school": "SMK Negeri 6 Jakarta (RPL)",
+    "bio": "Siswa RPL SMKN 6 Jakarta dengan fokus keahlian pada Web & Software Development serta manajemen basis data. Antusias berkontribusi dalam tim IT operasional, integrasi sistem, dan troubleshooting."
   },
   "projects": [
     {
       "id": "proj-1",
-      "title": "Website Redesign",
-      "description": "Revamping the corporate website for better user engagement and SEO.",
+      "title": "Client-Hub - Client Portal Interaktif",
+      "description": "Membangun antarmuka Client Portal interaktif berbasis React dan Tailwind CSS, navigasi dashboard multi-view, manajemen mock data aplikasi, responsive design, serta kolaborasi repositori via Git & GitHub.",
       "status": "In Progress",
-      "progress": 68,
-      "timeframeText": "Due in 12 days",
-      "statusText": "68% Complete",
-      "category": "Web Design",
-      "phase": "Development Phase",
-      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=80",
+      "progress": 85,
+      "timeframeText": "Sprint 3 Finalization",
+      "statusText": "85% Complete",
+      "category": "Front-End Web",
+      "phase": "Frontend Integration Phase",
+      "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&auto=format&fit=crop&q=80",
       "deliverables": [
         {
           "id": "del-1-1",
-          "title": "Figma High-Fidelity UI Screens (42 artboards)",
+          "title": "Desain Antarmuka Client Portal berbasis React & Tailwind CSS",
           "type": "figma",
           "completed": true,
-          "actionLabel": "Preview Figma"
+          "actionLabel": "Preview UI"
         },
         {
           "id": "del-1-2",
-          "title": "Staging Environment Deployment (v1.4.0)",
-          "type": "deployment",
+          "title": "Manajemen Komponen UI & Dashboard Multi-view Mock Data",
+          "type": "code",
           "completed": true,
-          "actionLabel": "Launch Staging"
+          "actionLabel": "Inspect Code"
         },
         {
           "id": "del-1-3",
-          "title": "Final Milestone Client Sign-Off",
+          "title": "Penerapan Responsive Design & Mobile Drawer Viewport",
+          "type": "deployment",
+          "completed": true,
+          "actionLabel": "Live Staging"
+        },
+        {
+          "id": "del-1-4",
+          "title": "Version Control & Pengelolaan Repositori via Git & GitHub",
+          "type": "code",
+          "completed": true,
+          "actionLabel": "GitHub Repo"
+        },
+        {
+          "id": "del-1-5",
+          "title": "Final Milestone Client Sign-Off & Handover",
           "type": "signoff",
           "completed": false,
           "actionLabel": "Pending Approval"
@@ -43,33 +61,131 @@
     },
     {
       "id": "proj-2",
-      "title": "Mobile App Development",
-      "description": "Creating a cross-platform app for enhanced mobile accessibility.",
-      "status": "Pending Approval",
-      "progress": 92,
-      "timeframeText": "Deliverables Ready",
-      "statusText": "Review Pending",
-      "category": "Mobile App",
-      "phase": "Sprint Review 4",
-      "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&auto=format&fit=crop&q=80",
+      "title": "Pengembangan Website Portofolio Pribadi",
+      "description": "Membangun website portofolio interaktif berbasis React dan Tailwind CSS dengan estetika Clean Minimalist UI. Mengintegrasikan Developer Profile, showcase proyek, sertifikat pelatihan, tech stack, serta fitur kontak.",
+      "status": "Completed",
+      "progress": 100,
+      "timeframeText": "Completed Sept 2026",
+      "statusText": "100% Shipped",
+      "category": "Web & UI Design",
+      "phase": "Production Handover",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=80",
       "deliverables": [
         {
           "id": "del-2-1",
-          "title": "React Native iOS & Android TestFlight Build (v0.9.2)",
-          "type": "deployment",
+          "title": "Desain UI Clean Minimalist & Styleguide di Figma & Canva",
+          "type": "figma",
           "completed": true,
-          "actionLabel": "TestFlight App"
+          "actionLabel": "Preview Figma"
         },
         {
           "id": "del-2-2",
-          "title": "Push Notification Engine Integration",
+          "title": "Integrasi Developer Profile, Showcase Proyek, & Tech Stack",
           "type": "code",
           "completed": true,
-          "actionLabel": "View Specs"
+          "actionLabel": "View Component"
         },
         {
           "id": "del-2-3",
-          "title": "Final Milestone Client Sign-Off & App Store Submission",
+          "title": "Fitur Kontak Interaktif & Integrasi Sertifikat Pelatihan",
+          "type": "code",
+          "completed": true,
+          "actionLabel": "Inspect Code"
+        },
+        {
+          "id": "del-2-4",
+          "title": "Deployment Production Vercel & Validasi UKBI Kemendikbudristek",
+          "type": "deployment",
+          "completed": true,
+          "actionLabel": "Live Website"
+        },
+        {
+          "id": "del-2-5",
+          "title": "Final Handover Sign-Off & Dokumentasi Portofolio",
+          "type": "signoff",
+          "completed": true,
+          "actionLabel": "Completed"
+        }
+      ]
+    },
+    {
+      "id": "proj-3",
+      "title": "Pelatihan Kecerdasan Buatan – Merkle",
+      "description": "Mempelajari konsep dasar dan implementasi praktis tools Artificial Intelligence (AI). Mengoptimalkan efisiensi kerja dan alur pengembangan perangkat lunak menggunakan teknologi AI serta eksplorasi potensi integrasi teknologi masa kini.",
+      "status": "Completed",
+      "progress": 100,
+      "timeframeText": "Closed Juni 2026",
+      "statusText": "100% Certified",
+      "category": "Artificial Intelligence",
+      "phase": "Program Certified",
+      "image": "https://images.unsplash.com/photo-1677442136019-21780efad99a?w=600&auto=format&fit=crop&q=80",
+      "deliverables": [
+        {
+          "id": "del-3-1",
+          "title": "Konsep Dasar & Implementasi Praktis Tools Artificial Intelligence (AI)",
+          "type": "doc",
+          "completed": true,
+          "actionLabel": "View Syllabus"
+        },
+        {
+          "id": "del-3-2",
+          "title": "Optimasi Efisiensi Kerja & Alur Pengembangan Perangkat Lunak via AI",
+          "type": "code",
+          "completed": true,
+          "actionLabel": "View Scripts"
+        },
+        {
+          "id": "del-3-3",
+          "title": "Eksplorasi Potensi Integrasi AI dalam Software Development Masa Kini",
+          "type": "doc",
+          "completed": true,
+          "actionLabel": "Capstone Report"
+        },
+        {
+          "id": "del-3-4",
+          "title": "Sertifikasi Kelulusan Pelatihan Kecerdasan Buatan Merkle",
+          "type": "signoff",
+          "completed": true,
+          "actionLabel": "Certificate"
+        }
+      ]
+    },
+    {
+      "id": "proj-4",
+      "title": "Sistem Informasi Manajemen Bisnis (Laravel & SSMS)",
+      "description": "Mengembangkan aplikasi web operasional bisnis berbasis PHP Laravel Framework dan manajemen basis data relasional di SSMS, menerapkan query SQL CRUD terstruktur untuk solusi operasional bisnis.",
+      "status": "Pending Approval",
+      "progress": 92,
+      "timeframeText": "UAT Deliverables Ready",
+      "statusText": "Review Pending",
+      "category": "Web & Database",
+      "phase": "User Acceptance Testing",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=80",
+      "deliverables": [
+        {
+          "id": "del-4-1",
+          "title": "Arsitektur Basis Data Relasional & Skema Tabel CRUD di SSMS",
+          "type": "doc",
+          "completed": true,
+          "actionLabel": "View ERD"
+        },
+        {
+          "id": "del-4-2",
+          "title": "Pengembangan Backend Laravel Framework & RESTful API Controller",
+          "type": "code",
+          "completed": true,
+          "actionLabel": "GitHub PR"
+        },
+        {
+          "id": "del-4-3",
+          "title": "Pengujian Alur Bisnis Operasional & Troubleshooting Koneksi DB",
+          "type": "deployment",
+          "completed": true,
+          "actionLabel": "Inspect Staging"
+        },
+        {
+          "id": "del-4-4",
+          "title": "Client Sign-Off Persetujuan Serah Terima Sistem UAT",
           "type": "signoff",
           "completed": false,
           "actionLabel": "Action Required"
@@ -77,342 +193,332 @@
       ]
     },
     {
-      "id": "proj-3",
-      "title": "E-commerce Migration",
-      "description": "Migrating the existing store to a more scalable platform.",
+      "id": "proj-5",
+      "title": "Aplikasi Desktop Operasional Bisnis (C# Windows Forms)",
+      "description": "Mengembangkan aplikasi desktop berbasis C# Windows Forms dan Visual Studio dengan konsep pemrograman berorientasi objek (OOP), struktur data, serta integrasi manajemen database lokal untuk kebutuhan operasional.",
       "status": "Completed",
       "progress": 100,
-      "timeframeText": "Closed Dec 20",
+      "timeframeText": "Closed Aug 2026",
       "statusText": "100% Shipped",
-      "category": "E-Commerce",
-      "phase": "Launch Ready",
-      "image": "https://images.unsplash.com/photo-1556742049-0a67c5574f73?w=600&auto=format&fit=crop&q=80",
-      "deliverables": [
-        {
-          "id": "del-3-1",
-          "title": "Shopify to Headless Next.js Catalog Data Migration",
-          "type": "code",
-          "completed": true,
-          "actionLabel": "Verified"
-        },
-        {
-          "id": "del-3-2",
-          "title": "Stripe Custom Checkout & Webhook Integration",
-          "type": "code",
-          "completed": true,
-          "actionLabel": "Verified"
-        },
-        {
-          "id": "del-3-3",
-          "title": "Final Handover Sign-Off & Production DNS Switch",
-          "type": "signoff",
-          "completed": true,
-          "actionLabel": "Completed"
-        }
-      ]
-    },
-    {
-      "id": "proj-4",
-      "title": "Brand Identity Overhaul",
-      "description": "Complete typography, color system guidelines, and marketing collateral templates.",
-      "status": "In Progress",
-      "progress": 45,
-      "timeframeText": "Due in 24 days",
-      "statusText": "45% Complete",
-      "category": "Branding",
-      "phase": "Design Guidelines",
-      "image": "https://images.unsplash.com/photo-1542744094-3a31f272c490?w=600&auto=format&fit=crop&q=80",
-      "deliverables": [
-        {
-          "id": "del-4-1",
-          "title": "Vector Logo Kit & SVG Assets",
-          "type": "figma",
-          "completed": true,
-          "actionLabel": "Preview"
-        },
-        {
-          "id": "del-4-2",
-          "title": "Corporate Brand Book PDF (60 pages)",
-          "type": "doc",
-          "completed": false,
-          "actionLabel": "In Review"
-        }
-      ]
-    },
-    {
-      "id": "proj-5",
-      "title": "AWS Cloud Architecture",
-      "description": "Kubernetes cluster deployment, auto-scaling policy, and multi-region database setup.",
-      "status": "Pending Approval",
-      "progress": 85,
-      "timeframeText": "Deliverables Ready",
-      "statusText": "Review Pending",
-      "category": "Cloud DevOps",
-      "phase": "Deployment Verification",
-      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop&q=80",
+      "category": "Desktop Application",
+      "phase": "Production Release",
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&auto=format&fit=crop&q=80",
       "deliverables": [
         {
           "id": "del-5-1",
-          "title": "Terraform Infrastructure as Code scripts",
+          "title": "Pemrograman Berorientasi Objek (OOP) & Desain Form di Visual Studio",
           "type": "code",
           "completed": true,
-          "actionLabel": "GitHub PR"
+          "actionLabel": "View Source"
         },
         {
           "id": "del-5-2",
-          "title": "Multi-region PostgreSQL Failover Verification",
-          "type": "deployment",
+          "title": "Integrasi Local Relational Database & Modul Transaksi CRUD",
+          "type": "code",
           "completed": true,
-          "actionLabel": "Audit Report"
+          "actionLabel": "Inspect DB"
         },
         {
           "id": "del-5-3",
-          "title": "Final Production Sign-Off",
+          "title": "Packaging Installer (.msi/.exe) & Dokumentasi User Guide",
+          "type": "doc",
+          "completed": true,
+          "actionLabel": "Download Guide"
+        },
+        {
+          "id": "del-5-4",
+          "title": "Final Release Verification & Operational Deployment Sign-Off",
           "type": "signoff",
-          "completed": false,
-          "actionLabel": "Action Needed"
+          "completed": true,
+          "actionLabel": "Completed"
         }
       ]
     },
     {
       "id": "proj-6",
-      "title": "Q3 Technical SEO Audit",
-      "description": "Core web vitals optimization, structured data schema fix, and backlink audit report.",
-      "status": "Completed",
-      "progress": 100,
-      "timeframeText": "Closed Nov 15",
-      "statusText": "100% Shipped",
-      "category": "SEO / Growth",
-      "phase": "Final Report",
-      "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&auto=format&fit=crop&q=80",
+      "title": "2D Educational Game Prototype (Godot & Unity)",
+      "description": "Eksperimen prototipe game edukasi logika pemrograman dan problem solving interaktif menggunakan game engine Unity dan Godot dengan scripting C# / GDScript.",
+      "status": "In Progress",
+      "progress": 60,
+      "timeframeText": "Sprint 2 Playtesting",
+      "statusText": "60% Complete",
+      "category": "Game Development",
+      "phase": "Core Mechanics Sprint",
+      "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&auto=format&fit=crop&q=80",
       "deliverables": [
         {
           "id": "del-6-1",
-          "title": "Technical SEO Health Benchmark Report",
-          "type": "doc",
+          "title": "Scripting Logika Pemrograman & Player Movement (C# / GDScript)",
+          "type": "code",
           "completed": true,
-          "actionLabel": "View PDF"
+          "actionLabel": "View Script"
         },
         {
           "id": "del-6-2",
-          "title": "Schema.org Rich Snippet Fix Validation",
-          "type": "code",
+          "title": "Level Design & Integrasi Visual Aset (Canva & Figma)",
+          "type": "figma",
           "completed": true,
-          "actionLabel": "Completed"
+          "actionLabel": "Preview Assets"
+        },
+        {
+          "id": "del-6-3",
+          "title": "Playtest Alpha Build & Evaluasi Performa Loop Game",
+          "type": "deployment",
+          "completed": false,
+          "actionLabel": "Alpha Build"
+        },
+        {
+          "id": "del-6-4",
+          "title": "Milestone Sign-Off Evaluasi Gameplay Logika",
+          "type": "signoff",
+          "completed": false,
+          "actionLabel": "Pending Review"
         }
       ]
     }
   ],
   "invoices": [
     {
-      "id": "INV-00123",
-      "project": "Website Redesign",
-      "amount": "$1,200.00",
-      "amountNumber": 1200,
-      "issueDate": "Dec 20, 2024",
-      "dueDate": "Jan 5, 2025",
-      "status": "Paid"
-    },
-    {
-      "id": "INV-00125",
-      "project": "Brand Identity Overhaul",
-      "amount": "$2,000.00",
-      "amountNumber": 200,
-      "issueDate": "Feb 10, 2025",
-      "dueDate": "Feb 25, 2025",
+      "id": "INV-2026-001",
+      "project": "Client-Hub - Client Portal Interaktif",
+      "amount": "$1,250.00",
+      "amountNumber": 1250,
+      "issueDate": "Sep 05, 2026",
+      "dueDate": "Sep 25, 2026",
       "status": "Pending"
     },
     {
-      "id": "INV-00126",
-      "project": "E-commerce Migration",
-      "amount": "$1,800.00",
-      "amountNumber": 1800,
-      "issueDate": "Dec 01, 2024",
-      "dueDate": "Dec 20, 2024",
+      "id": "INV-2026-002",
+      "project": "Pengembangan Website Portofolio Pribadi",
+      "amount": "$950.00",
+      "amountNumber": 950,
+      "issueDate": "Aug 20, 2026",
+      "dueDate": "Sep 10, 2026",
       "status": "Paid"
     },
     {
-      "id": "INV-00127",
-      "project": "AWS Cloud Architecture",
-      "amount": "$3,450.00",
-      "amountNumber": 3450,
-      "issueDate": "Mar 10, 2025",
-      "dueDate": "Mar 24, 2025",
-      "status": "Overdue"
+      "id": "INV-2026-003",
+      "project": "Sistem Informasi Manajemen Bisnis (Laravel & SSMS)",
+      "amount": "$1,800.00",
+      "amountNumber": 1800,
+      "issueDate": "Sep 01, 2026",
+      "dueDate": "Sep 28, 2026",
+      "status": "Pending"
+    },
+    {
+      "id": "INV-2026-004",
+      "project": "Aplikasi Desktop Operasional Bisnis (C# Windows Forms)",
+      "amount": "$1,150.00",
+      "amountNumber": 1150,
+      "issueDate": "Jul 25, 2026",
+      "dueDate": "Aug 15, 2026",
+      "status": "Paid"
+    },
+    {
+      "id": "INV-2026-005",
+      "project": "Pelatihan Kecerdasan Buatan – Merkle",
+      "amount": "$650.00",
+      "amountNumber": 650,
+      "issueDate": "Jun 10, 2026",
+      "dueDate": "Jun 30, 2026",
+      "status": "Paid"
     }
   ],
   "tasks": [
     {
       "id": "task-1",
-      "title": "Prepare Figma high-fi mockups for Checkout v2",
-      "tag": "UI Design",
+      "title": "Menerapkan responsive design dan manajemen state mock data",
+      "tag": "Front-End",
       "tagColor": "bg-blue-50 text-blue-700 border-blue-200",
-      "status": "todo",
-      "dueText": "Oct 18",
-      "project": "Website Redesign",
+      "status": "in-progress",
+      "dueText": "2 days left",
+      "project": "Client-Hub - Client Portal Interaktif",
       "assignee": {
-        "name": "Sarah Jenkins",
-        "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80"
+        "name": "Daffi Alfian Hadi",
+        "avatar": "my-photo.jpeg"
       }
     },
     {
       "id": "task-2",
-      "title": "Gather legal team privacy policy disclaimers",
-      "tag": "Content",
+      "title": "Perancangan UI Clean Minimalist & Desain Sistem di Figma",
+      "tag": "UI/UX",
       "tagColor": "bg-purple-50 text-purple-700 border-purple-200",
-      "status": "todo",
-      "dueText": "Oct 22",
-      "project": "E-commerce Migration",
+      "status": "done",
+      "dueText": "Completed Sept 2",
+      "project": "Pengembangan Website Portofolio Pribadi",
       "assignee": {
-        "name": "David Miller",
-        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80"
+        "name": "Daffi Alfian Hadi",
+        "avatar": "my-photo.jpeg"
       }
     },
     {
       "id": "task-3",
-      "title": "Tailwind component library integration & dark mode tokens",
-      "tag": "Engineering",
+      "title": "Arsitektur Database Relasional & Query CRUD di SSMS",
+      "tag": "Database",
       "tagColor": "bg-emerald-50 text-emerald-700 border-emerald-200",
-      "status": "in-progress",
-      "dueText": "2 days left",
-      "project": "Website Redesign",
+      "status": "done",
+      "dueText": "Completed Aug 28",
+      "project": "Sistem Informasi Manajemen Bisnis (Laravel & SSMS)",
       "assignee": {
-        "name": "Alex Chen",
-        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80"
+        "name": "Daffi Alfian Hadi",
+        "avatar": "my-photo.jpeg"
       }
     },
     {
       "id": "task-4",
-      "title": "Stripe Customer Portal webhook listeners",
-      "tag": "API",
+      "title": "Integrasi Tools Artificial Intelligence untuk Alur Kerja Coding",
+      "tag": "AI / Tools",
       "tagColor": "bg-amber-50 text-amber-700 border-amber-200",
-      "status": "in-progress",
-      "dueText": "Oct 16",
-      "project": "E-commerce Migration",
+      "status": "done",
+      "dueText": "Completed June 18",
+      "project": "Pelatihan Kecerdasan Buatan – Merkle",
       "assignee": {
-        "name": "Mike Zhao",
-        "avatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=100&auto=format&fit=crop&q=80"
+        "name": "Daffi Alfian Hadi",
+        "avatar": "my-photo.jpeg"
       }
     },
     {
       "id": "task-5",
-      "title": "Interactive Prototype: Client Portal Dashboard",
+      "title": "Pengujian responsive design serta pengelolaan repositori via Git & GitHub",
       "tag": "Deliverable",
-      "tagColor": "bg-amber-50 text-amber-700 border-amber-200",
+      "tagColor": "bg-blue-50 text-blue-700 border-blue-200",
       "status": "review",
       "dueText": "Action Needed",
-      "project": "Website Redesign",
+      "project": "Client-Hub - Client Portal Interaktif",
       "assignee": {
-        "name": "Joel Hannibal",
-        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+        "name": "Daffi Alfian Hadi",
+        "avatar": "my-photo.jpeg"
       }
     },
     {
       "id": "task-6",
-      "title": "Brand Asset S3 bucket migration",
-      "tag": "Milestone",
+      "title": "Pembuatan GUI Windows Forms & Event Handler di Visual Studio",
+      "tag": "Desktop",
       "tagColor": "bg-emerald-50 text-emerald-700 border-emerald-200",
       "status": "done",
-      "dueText": "Completed Oct 4",
-      "project": "Brand Identity Overhaul",
+      "dueText": "Completed July 30",
+      "project": "Aplikasi Desktop Operasional Bisnis (C# Windows Forms)",
       "assignee": {
-        "name": "Elena Torres",
-        "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80"
+        "name": "Daffi Alfian Hadi",
+        "avatar": "my-photo.jpeg"
       }
     },
     {
       "id": "task-7",
-      "title": "Signed Master Service Agreement 2025",
-      "tag": "Contract",
-      "tagColor": "bg-emerald-50 text-emerald-700 border-emerald-200",
-      "status": "done",
-      "dueText": "Completed Sep 28",
-      "project": "General",
+      "title": "Pengembangan Logika Pemrograman Puzzle Game di Godot / Unity",
+      "tag": "Game Dev",
+      "tagColor": "bg-indigo-50 text-indigo-700 border-indigo-200",
+      "status": "todo",
+      "dueText": "Next Sprint",
+      "project": "2D Educational Game Prototype (Godot & Unity)",
       "assignee": {
-        "name": "Joel Hannibal",
-        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+        "name": "Daffi Alfian Hadi",
+        "avatar": "my-photo.jpeg"
+      }
+    },
+    {
+      "id": "task-8",
+      "title": "Verifikasi UAT Endpoint API Laravel & Troubleshooting Koneksi DB",
+      "tag": "Backend",
+      "tagColor": "bg-amber-50 text-amber-700 border-amber-200",
+      "status": "review",
+      "dueText": "Action Needed",
+      "project": "Sistem Informasi Manajemen Bisnis (Laravel & SSMS)",
+      "assignee": {
+        "name": "Daffi Alfian Hadi",
+        "avatar": "my-photo.jpeg"
       }
     }
   ],
   "contracts": [
     {
       "id": "ctr-1",
-      "title": "Wonderinc Master Services Agreement (MSA) 2025",
-      "type": "MSA",
+      "title": "Client Portal Development Agreement (Client-Hub 2026)",
+      "type": "SOW",
       "status": "active",
-      "validText": "Signed via DocuSign • Valid until Dec 31, 2025 • Governs all umbrella statement of works.",
-      "description": "Comprehensive corporate service level agreement and terms of engagement.",
-      "pdfName": "Wonderinc_MSA_2025.pdf"
+      "validText": "Disetujui oleh Daffi Alfian Hadi via DocuSign • Berlaku hingga Des 2026 • React & Tailwind CSS Portal.",
+      "description": "Perjanjian lingkup pekerjaan pengembangan front-end antarmuka portal klien, integrasi mock data, dan responsive design.",
+      "pdfName": "SOW_ClientHub_DaffiAlfian.pdf"
     },
     {
       "id": "ctr-2",
-      "title": "Statement of Work (SOW) #4: Mobile App Phase 2",
+      "title": "SOW #2: Sistem Informasi Bisnis (Laravel & SSMS)",
       "type": "SOW",
       "status": "pending",
-      "validText": "Needs Joel Hannibal's electronic signature to initiate Android push-notification sprint.",
-      "description": "Scope, milestone milestones, deliverables, and payment schedule for Phase 2 mobile sprints.",
-      "pdfName": "SOW_Mobile_App_Phase2.pdf"
+      "validText": "Menunggu tanda tangan elektronik Daffi Alfian Hadi untuk penyelesaian tahap UAT dan serah terima database.",
+      "description": "Spesifikasi lingkup modul database SSMS, backend Laravel, dan jadwal pengujian operasional bisnis.",
+      "pdfName": "SOW_Laravel_SSMS_BusinessSystem.pdf"
     },
     {
       "id": "ctr-3",
-      "title": "Mutual Non-Disclosure Agreement (NDA)",
+      "title": "Mutual Non-Disclosure Agreement (NDA) - Perlindungan Kode Sumber & Basis Data",
       "type": "NDA",
       "status": "active",
-      "validText": "Proprietary code protection, enterprise grade IP confidentiality agreement.",
-      "description": "Standard bilateral mutual confidentiality protecting technical IP, databases, and trade secrets.",
-      "pdfName": "Mutual_NDA_Wonderinc.pdf"
+      "validText": "Perlindungan proprietary source code, arsitektur database relasional, dan data sensitif bisnis.",
+      "description": "Perjanjian kerahasiaan bilateral standar untuk perlindungan repositori Git, skema database, dan data teknis.",
+      "pdfName": "Mutual_NDA_Daffi_Alfian_Hadi.pdf"
     },
     {
       "id": "ctr-4",
-      "title": "SOW #2: Initial Discovery & Architecture Audit",
+      "title": "Kontrak Pengembangan Website Portofolio & Showcase UI",
       "type": "SOW",
       "status": "completed",
-      "validText": "Fulfilled on Dec 15, 2024 • Closed and certified by Wonderinc Legal.",
-      "description": "Discovery analysis phase completed and signed off with final architecture blueprint delivery.",
-      "pdfName": "SOW_Discovery_Audit_Signed.pdf"
+      "validText": "Diselesaikan pada September 2026 • Serah terima aset Figma, Canva, & Vercel deployment sukses.",
+      "description": "Kontrak pengerjaan portofolio pribadi interaktif dengan estetika clean minimalist UI dan verifikasi UKBI.",
+      "pdfName": "SOW_Personal_Portfolio_Signed.pdf"
     }
   ],
   "tickets": [
     {
-      "id": "TICK-8841",
-      "subject": "Figma link permissions for QA team",
-      "project": "Website Redesign",
-      "priority": "Normal",
-      "status": "Investigating",
-      "timeAgo": "Updated 22m ago",
-      "assignedTo": "Elena Torres (Lead PM)",
-      "description": "Requested view and comment access for external security testers on Website Redesign workspace."
+      "id": "TICK-301",
+      "subject": "Troubleshooting Koneksi Basis Data SSMS ke Backend Laravel",
+      "project": "Sistem Informasi Manajemen Bisnis (Laravel & SSMS)",
+      "priority": "Urgent",
+      "status": "Resolved",
+      "timeAgo": "Closed 2h ago",
+      "assignedTo": "Daffi Alfian Hadi (Database & Software Dev)",
+      "description": "Optimalisasi konfigurasi port SQL Server dan kredensial authentication SSMS pada file environment Laravel."
     },
     {
-      "id": "TICK-8820",
-      "subject": "Clarification on Invoice INV-00123 tax rate",
-      "project": "Website Redesign",
+      "id": "TICK-302",
+      "subject": "Konfigurasi GitHub Branch Protection & Code Review Rules",
+      "project": "Client-Hub - Client Portal Interaktif",
+      "priority": "Normal",
+      "status": "Investigating",
+      "timeAgo": "Updated 18m ago",
+      "assignedTo": "Daffi Alfian Hadi (Front-End Lead)",
+      "description": "Pengaturan branch protection rules dan pull request review workflow untuk kolaborasi tim developer."
+    },
+    {
+      "id": "TICK-303",
+      "subject": "Verifikasi Sertifikat UKBI Kemendikbudristek & Dokumen Pendukung Magang",
+      "project": "Pengembangan Website Portofolio Pribadi",
       "priority": "Normal",
       "status": "Resolved",
-      "timeAgo": "Closed Jan 6, 2025",
-      "assignedTo": "Billing Support",
-      "description": "Wonderinc Finance updated VAT credit notes and reissued receipt PDF."
+      "timeAgo": "Closed yesterday",
+      "assignedTo": "Academic Verification Team",
+      "description": "Penyematan badge verifikasi UKBI (Kemendikbudristek) dan sertifikat pelatihan AI Merkle ke dalam showcase portofolio."
     }
   ],
   "notifications": [
     {
       "id": "notif-1",
-      "title": "Deliverable Ready for Review",
-      "description": "Mobile App Development sprint 4 artifacts submitted for your sign-off.",
-      "time": "10m ago",
+      "title": "Deliverable Siap Ditinjau",
+      "description": "Client-Hub antarmuka Client Portal & mock data siap untuk sign-off.",
+      "time": "12m ago",
       "read": false
     },
     {
       "id": "notif-2",
-      "title": "Invoice INV-00125 Issued",
-      "description": "Brand Identity Overhaul invoice is due Feb 25, 2025.",
+      "title": "Invoice INV-2026-001 Diterbitkan",
+      "description": "Client-Hub - Client Portal Interaktif invoice jatuh tempo Sep 25, 2026.",
       "time": "2h ago",
       "read": false
     },
     {
       "id": "notif-3",
-      "title": "Contract Pending Signature",
-      "description": "SOW #4: Mobile App Phase 2 awaits Joel Hannibal's electronic signature.",
+      "title": "Dokumen Menunggu Tanda Tangan",
+      "description": "SOW #2: Sistem Informasi Bisnis (Laravel & SSMS) menunggu konfirmasi e-signature Daffi Alfian Hadi.",
       "time": "1d ago",
       "read": true
     }

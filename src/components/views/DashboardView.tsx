@@ -7,7 +7,7 @@ import {
   MoreHorizontal,
   Image as ImageIcon
 } from 'lucide-react';
-import { Project, Invoice, NavView } from '../../types';
+import { Project, Invoice, NavView, UserProfile } from '../../types';
 
 interface DashboardViewProps {
   projects: Project[];
@@ -16,6 +16,7 @@ interface DashboardViewProps {
   onNavigate: (view: NavView) => void;
   onDownloadInvoice: (invoiceId: string) => void;
   searchQuery?: string;
+  user?: UserProfile;
 }
 
 export const DashboardView: React.FC<DashboardViewProps> = ({
@@ -24,7 +25,8 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
   onSelectProject,
   onNavigate,
   onDownloadInvoice,
-  searchQuery = ''
+  searchQuery = '',
+  user
 }) => {
   // Filter by search query if any
   const filteredProjects = projects.filter(
@@ -105,12 +107,19 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
   return (
     <div id="view-dashboard" className="space-y-10 animate-fade pb-8">
       {/* Welcome Header */}
-      <div className="space-y-1">
-        <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
-          Welcome Back, Daffi
-        </h1>
+      <div className="space-y-1.5">
+        <div className="flex flex-wrap items-center gap-3">
+          <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+            Welcome Back, {user?.name || 'Daffi Alfian Hadi'}
+          </h1>
+          {user?.role && (
+            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-200 shadow-2xs">
+              {user.role}
+            </span>
+          )}
+        </div>
         <p className="text-slate-500 text-sm sm:text-base">
-          Here's a quick overview of your account activities.
+          {user?.school ? `${user.school} • ` : ''}Here's a quick overview of your projects, sprint tasks, and client portal activities.
         </p>
       </div>
 

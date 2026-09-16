@@ -1,19 +1,30 @@
 import React, { useState } from 'react';
 import { Send, MessageSquare, CheckCircle, Clock } from 'lucide-react';
-import { SupportTicket } from '../../types';
+import { SupportTicket, Project } from '../../types';
 
 interface SupportViewProps {
   tickets: SupportTicket[];
+  projects?: Project[];
   onSubmitTicket: (ticket: Omit<SupportTicket, 'id' | 'timeAgo' | 'status' | 'assignedTo'>) => void;
   searchQuery?: string;
 }
 
 export const SupportView: React.FC<SupportViewProps> = ({
   tickets,
+  projects = [],
   onSubmitTicket,
   searchQuery = ''
 }) => {
-  const [project, setProject] = useState('Website Redesign');
+  const projectOptions = Array.from(
+    new Set([
+      ...projects.map((p) => p.title),
+      ...tickets.map((t) => t.project)
+    ])
+  );
+
+  const [project, setProject] = useState(
+    projectOptions[0] || 'Client-Hub - Client Portal Interaktif'
+  );
   const [priority, setPriority] = useState<'Normal' | 'Urgent' | 'Critical'>('Normal');
   const [subject, setSubject] = useState('');
   const [description, setDescription] = useState('');
@@ -74,12 +85,12 @@ export const SupportView: React.FC<SupportViewProps> = ({
                 onChange={(e) => setProject(e.target.value)}
                 className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition"
               >
-                <option>Website Redesign</option>
-                <option>Mobile App Development</option>
-                <option>E-commerce Migration</option>
-                <option>Brand Identity Overhaul</option>
-                <option>AWS Cloud Architecture</option>
-                <option>Billing / Invoicing Inquiry</option>
+                {projectOptions.map((projTitle) => (
+                  <option key={projTitle} value={projTitle}>
+                    {projTitle}
+                  </option>
+                ))}
+                <option value="Pertanyaan Umum / Integrasi Sistem">Pertanyaan Umum / Integrasi Sistem</option>
               </select>
             </div>
 

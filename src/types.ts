@@ -77,4 +77,8 @@ export interface UserProfile {
   email: string;
   role: string;
   avatar: string;
+  phone?: string;
+  location?: string;
+  school?: string;
+  bio?: string;
 }
